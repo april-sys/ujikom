@@ -1,0 +1,1 @@
+Letakkan fpdf.php (dan folder font) dari fpdf.org di folder ini.

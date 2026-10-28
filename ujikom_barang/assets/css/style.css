@@ -1,0 +1,113 @@
+:root {
+    --warna-utama: #1f4e79;
+    --warna-utama-gelap: #173b5c;
+    --latar: #f4f5f7;
+    --garis: #dee2e6;
+    --teks-redup: #6c757d;
+}
+
+body {
+    background: var(--latar);
+    color: #212529;
+}
+
+a {
+    color: var(--warna-utama);
+}
+
+/* Header, navbar, footer */
+.app-header {
+    background: #fff;
+    border-bottom: 1px solid var(--garis);
+    padding: .75rem 0;
+}
+
+.app-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--warna-utama);
+}
+
+.app-user {
+    font-size: .9rem;
+    color: var(--teks-redup);
+}
+
+.navbar-app {
+    background: var(--warna-utama);
+}
+
+.navbar-app .nav-link.active {
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.app-footer {
+    background: #fff;
+    border-top: 1px solid var(--garis);
+    padding: .9rem 0;
+    font-size: .875rem;
+    color: var(--teks-redup);
+}
+
+/* Tombol utama mengikuti warna utama */
+.btn-primary {
+    --bs-btn-bg: var(--warna-utama);
+    --bs-btn-border-color: var(--warna-utama);
+    --bs-btn-hover-bg: var(--warna-utama-gelap);
+    --bs-btn-hover-border-color: var(--warna-utama-gelap);
+    --bs-btn-active-bg: var(--warna-utama-gelap);
+    --bs-btn-active-border-color: var(--warna-utama-gelap);
+    --bs-btn-disabled-bg: var(--warna-utama);
+    --bs-btn-disabled-border-color: var(--warna-utama);
+}
+
+.form-control:focus {
+    border-color: var(--warna-utama);
+    box-shadow: 0 0 0 .2rem rgba(31, 78, 121, .2);
+}
+
+/* Kartu dan tabel */
+.card {
+    border: 1px solid var(--garis);
+    border-radius: .375rem;
+    box-shadow: none;
+}
+
+.card-header {
+    background: #fff;
+    font-weight: 600;
+}
+
+.stat-label {
+    font-size: .875rem;
+    color: var(--teks-redup);
+}
+
+.stat-nilai {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--warna-utama);
+    word-break: break-word;
+}
+
+.table thead th {
+    background: #e9ecef;
+    white-space: nowrap;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+.kolom-aksi {
+    white-space: nowrap;
+}
+
+@media (max-width: 575.98px) {
+    .stat-nilai {
+        font-size: 1.35rem;
+    }
+}
